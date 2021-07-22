@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% load crispy_forms_tags %}
+{% block content %}
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <fieldset class="form-group" > 
+            <legend> Write Essay </legend>
+            {{ form|crispy }}
+            {{form.media}}
+        </fieldset>
+        <div class="form-group">
+            <button type="submit" class="btn btn-outline-secondary" > Submit </button>
+        </div>
+    </form>
+
+<div class="border-top pt-3" >
+    
+
+<div>
+
+    
+
+{%endblock content %}
