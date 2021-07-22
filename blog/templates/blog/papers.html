@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+
+<div>
+    <h2 class="my-2 py-3" > My Papers </h2>
+    <ul id="sidebar-content" class="list-group list-group-flush" style="width: 100%" >
+            {% for item in papers %}
+                <li><a href="/paper/{{item.id}}/" class="list-group-item">{{item.title}}</a></li>
+            {% endfor %}
+    </ul>
+</div>
+
+
+
+
+{% endblock  %}
+
+{% block sidebar %}
+
+
+{% endblock sidebar %}
