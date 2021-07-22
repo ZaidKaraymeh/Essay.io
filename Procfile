@@ -1,1 +1,1 @@
-web: gunicorn essaysio.wsgi --log-file -
+web: gunicorn backend.wsgi --log-file -
