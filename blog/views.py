@@ -32,7 +32,6 @@ def getPaper(request, id):
 
     papersNonCleaned = Essay.objects.filter(id=id)
     paper = [{"title": x[2], "content": x[3], "id": x[0]} for x in papersNonCleaned.values_list()]
-    print(paper)
     context = {"paper": paper[0]}
     return render(request, "blog/paper.html", context)
 
