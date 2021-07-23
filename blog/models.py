@@ -11,5 +11,5 @@ class Essay(models.Model):
     def __str__(self):
         return self.title
 
-    def get_absolute_url(self):
-        return reverse("blog-paper", kwargs={"id":str(self.id)})
+    # def get_absolute_url(self):
+    #     return reverse("blog-paper", kwargs={"id":str(self.id)})
