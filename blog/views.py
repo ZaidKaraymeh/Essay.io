@@ -79,3 +79,6 @@ def editPaper(request, id):
     context = {"form": form, "id":id}
 
     return render(request, "blog/edit.html", context)
+
+def about(request):
+    return render(request, "blog/about.html")
